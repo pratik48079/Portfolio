@@ -1,0 +1,328 @@
+/* ============================<NAVBAR-START>========================================= */
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: monospace;
+    width: 100%;
+}
+
+#navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    top:0px;
+    left:0px;
+    height: 100%;
+    width:100%;
+    z-index: -1;
+    opacity: 0;
+}
+
+#navbar{
+    display: flex;
+    justify-content: center;
+    background: url('cEz3G.jpg') no-repeat center center/cover;
+    border-bottom: 7px solid red;
+   
+}
+
+/* nav{
+    background-color: #0082e6;         FOR BACKGROUND
+} */
+
+label.logo{
+    color: white;
+    font-size: 35px;
+    line-height: 80px;
+    padding: 0 100px;
+    font-weight: bolder;
+    color: yellow;
+    text-shadow: 3.5px 3.5px darkred;
+    width: 50%;
+}
+
+nav ul{
+    /* float: right; */
+    margin-right: 20px;
+    width: 50%;
+}
+
+nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+
+nav ul li a{
+    color: white;
+    font-size: 17px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-transform: uppercase;
+}
+
+a.active,a:hover{
+    background-color: #1b9bff;
+    transition: .5s;
+}
+
+.checkbtn{
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+#check{
+    display: none;
+}
+
+@media (max-width:952px){
+    lable.logo{
+        font-size: 30px;
+    }
+
+    nav ul li a{
+        font-size:16px;
+    }
+}
+
+@media(max-width:858px){
+    .checkbtn{
+        display: block;
+    }
+    ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #2c3e50;
+        top:80px;
+        left:-100%;
+        text-align: center;
+        transition: all .5s;
+    }
+    nav ul li{
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+    nav ul li a{
+        font-size: 20px;
+    }
+    a:hover,a.active{
+        background: none;
+        color: #0082e6;
+    }
+    #check:checked ~ul{
+        left: o;
+
+    }
+}
+
+.bottom-line {
+    height: 3px;
+    width: 7rem;
+    text-decoration: solid;
+    background: red;
+    display: block;
+    margin: 0 auto 1rem auto;
+}
+
+/* ============================<NAVBAR-END>========================================= */
+#first{
+    padding: 10px;
+}
+.blog .T-1{
+    display:flex;
+    width: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .blog .column{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+  }
+  .blog .column-1 .i-1,.blog .column .column-1{
+    height: 100%;
+  }
+  .blog img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .blog .column-1 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 30px;
+    background-color: gainsboro;
+  }
+  .blog h2 {
+    font-size: 40px;
+    font-weight: 100;
+    padding: 10px;
+  }
+  .blog p{
+    margin: 20px 0px;
+  }
+  .blog a{
+    margin:10px;
+    background-color: black;
+    color: white;
+    padding: 15px;
+    text-decoration: none;
+  }
+  .reverse .T-1{
+    flex-direction: row-reverse;
+    
+
+  }
+
+.rm{
+    font-weight: bolder;
+    font-size: 20px;
+    border-radius: 20px;
+}
+  .rm:hover{
+    background-color: red;
+
+  }
+
+  .blog .i-1{
+    height: 455px;
+  }
+  
+
+/* ============================<SECTION-FOOTER-START>================================= */
+#footer{
+    justify-content: center;
+    text-align: center;
+    display: flex;
+    background-color: black;
+    color: white;
+    padding: 20px;
+}
+
+#compony{
+    text-align: center;
+    justify-content: center;
+    width: 33%;
+    font-weight: 200;
+    font-size: 15px;
+}
+
+#compony h2{
+    font-weight: bolder;
+    font-size: 30px;
+}
+
+#navigate{
+    text-align: center;
+    justify-content: center;
+    width: 33%;
+    font-weight: 200;
+    font-size: 25px;    
+}
+
+#navigate ul{
+    justify-content: center;
+}
+#navigate h2{
+    font-weight: bolder;
+    font-size: 30px;
+}
+
+#navigate ul li{
+    display: inline block;
+    padding: 5px;
+}
+
+#navigate ul li a{
+    color: white;
+    font-size: 17px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-transform: uppercase;
+}
+
+
+/* #navigate  li:hover {
+    background: #ffbc00;
+    /* width: 60px;
+    height: 60px;
+    line-height: 50px; */
+    /* display: ; */
+*/
+
+
+
+#followme{
+    text-align: center;
+    justify-content: center;
+    width: 33%;
+    font-weight: 200;
+    font-size: 20px;
+}
+
+#followme h2{
+    font-weight: bolder;
+    font-size: 30px;
+}
+
+#followme ul li {
+    display: inline ;
+}
+
+#followme .process-icon{
+
+
+    border-radius: 50%;
+    background: #333;
+    color: #fff;
+    padding: 0.5rem;
+    width: 50px;
+    height: 70px;
+    line-height: 50px;
+    text-align: center;
+    position: relative;
+    transition: all 1s;
+}
+
+#followme .process-icon:hover {
+    background: #ffbc00;
+    width: 60px;
+    height: 60px;
+    line-height: 50px;
+}
+
+#followme p:hover{
+background-color: yellow;
+
+}
+
+#followme p{
+    color: red;
+    font-size:20px;
+    font-weight: bolder;
+    
+}
+
+footer #para{
+    text-align: center;
+    justify-content: center;
+    font-weight: bolder;
+    font-size: 20px;
+}
+
+/* ============================<SECTION-FOOTER-END>================================= */

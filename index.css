@@ -1,0 +1,545 @@
+ *{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+
+
+/* ============================<NAVBAR-START>========================================= */
+
+body{
+    font-family: monospace;
+    width: 100%;
+}
+
+#navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    top:0px;
+    left:0px;
+    height: 100%;
+    width:100%;
+    z-index: -1;
+    opacity: 0;
+}
+
+#navbar{
+    display: flex;
+    justify-content: center;
+}
+
+/* nav{
+    background-color: #0082e6;         FOR BACKGROUND
+} */
+
+label.logo{
+    color: white;
+    font-size: 35px;
+    line-height: 80px;
+    padding: 0 100px;
+    font-weight: bolder;
+    color: yellow;
+    text-shadow: 3.5px 3.5px darkred;
+    width: 50%;
+}
+
+nav ul{
+    /* float: right; */
+    margin-right: 20px;
+    width: 50%;
+}
+
+nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+
+nav ul li a{
+    color: white;
+    font-size: 17px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-transform: uppercase;
+}
+
+a.active,a:hover{
+    background-color: #1b9bff;
+    transition: .5s;
+}
+
+.checkbtn{
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+#check{
+    display: none;
+}
+
+@media (max-width:952px){
+    lable.logo{
+        font-size: 30px;
+    }
+
+    nav ul li a{
+        font-size:16px;
+    }
+}
+
+@media(max-width:858px){
+    .checkbtn{
+        display: block;
+    }
+    ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #2c3e50;
+        top:80px;
+        left:-100%;
+        text-align: center;
+        transition: all .5s;
+    }
+    nav ul li{
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+    nav ul li a{
+        font-size: 20px;
+    }
+    a:hover,a.active{
+        background: none;
+        color: #0082e6;
+    }
+    #check:checked ~ul{
+        left: o;
+
+    }
+}
+
+/* ============================<NAVBAR-END>========================================= */
+
+/* ============================<SECTION-HOME-START>================================= */
+
+/* section{
+    background-image: url(HOME-BG-1.jpg);
+    background-size:cover;                        FOR ONLY SECTION IMAGE
+    height: calc(100vh - 80px);
+}  */
+
+header::before{ 
+    content: "";
+    position: absolute;
+    background: url('cEz3G.jpg') no-repeat center center/cover;
+    height: 642px;
+    top:0px;
+    left:0px;
+    width: 100%;
+    z-index: -1;
+    opacity:1;
+}
+
+#home{
+    display: flex;
+    flex-direction: column;
+    padding:3px 200px;
+    height: 550px;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+
+#home h1{
+    color:BLACK;
+    text-align: center;
+    font-family: 'Bree Serif', serif;
+    /* background-image: linear-gradient(to left, violet, indigo, green, blue, yellow, orange, red);
+    -webkit-background-clip: text;
+        -moz-background-clip: text;
+        background-clip: text;                 FOR COLORFUULL COLOR
+        color: transparent; */
+}
+
+#header{
+    justify-content: center;
+}
+
+
+.dfg{
+    text-align: center;
+    font-size: 25px;
+    text-decoration: none;
+    cursor: pointer;
+    text-decoration: underline #ffbc00;
+    color: lightgray;
+}
+
+.dfg:hover{
+    text-decoration: none;
+}
+.bnm{
+    text-align: center;
+    visibility: hidden;  
+}
+
+.dfg:hover+.bnm{
+    visibility: visible;
+    color: yellow;
+    text-decoration: none;
+}
+
+button{
+    font-weight: bolder;
+  
+    border-radius: 7px;
+    cursor: pointer;
+    border: 5px solid yellow;
+    color: black;
+    border-radius: 10px;
+    font-size: 1.5rem;
+    padding: 10px;
+}
+
+button:hover{
+    background-color:brown;
+    border-radius: 10px solid black;
+   
+}
+
+.h-home{
+    font-family: 'Bree Serif', serif;
+    font-size: 2.2rem;
+    padding: 12px;
+    text-align: center;
+}
+
+
+/* ============================<SECTION-HOME-END>================================= */
+
+/* ============================<SECTION-FIRST-START>================================= */
+
+#first{
+    text-align: center;
+    font-weight: bolder;
+    background-color: lightgreen;
+    padding: 20px;
+    font-weight: bolder;
+    font-size: 15PX;
+}
+
+.bottom-line {
+    height: 3px;
+    width: 7rem;
+    text-decoration: solid;
+    background: red;
+    display: block;
+    margin: 0 auto 1rem auto;
+}
+
+/* ============================<SECTION-FIRST-END>================================= */
+
+/* ============================<SECTION-SECOND-START>================================= */
+
+#second{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    padding: 30PX;
+    width: 100%;    
+}
+
+#second h2 {
+    display: block;
+    font-size: 1.17em;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+
+#second h2{
+    font-weight: bolder;
+    font-size: 20px;
+}
+
+.sec{
+    width: 25%;
+    font-weight: 700;    
+}
+.sec1{
+    width: 25%;   
+    font-weight: 700; 
+}
+
+/* ============================<SECTION-SECOND-END>================================= */
+
+/* ============================<SECTION-THIRD-START>================================= */
+
+
+#third{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    padding: 15PX;
+    width: 100%;
+    font-weight: bolder;
+    font-size: 20PX;
+}
+
+#third h3 {
+    display: block;
+    font-size: 1.17em;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+
+.thir{
+    width: 25%;
+    background-color: #1b9bff;
+    padding: 15px;
+}
+.thir1{
+    width: 25%;
+    background-color: lightslategray;
+    padding: 15px;
+}
+
+
+/* ============================<SECTION-THIRD-END>================================= */
+
+/* ============================<SECTION-FOURTH-START>================================= */
+
+
+#fourth{
+    text-align: center;
+    font-weight: bolder;
+    background-color: lightgreen;
+    padding: 20px;
+    font-weight: bolder;
+    font-size: 15PX;
+}
+
+.bottom-line {
+    height: 3px;
+    width: 7rem;
+    text-decoration: solid;
+    background: red;
+    display: block;
+    margin: 0 auto 1rem auto;
+}
+
+/* ============================<SECTION-FOURTH-START>================================= */
+
+/* ============================<SECTION-FIFTH-START>================================= */
+
+
+#fifth{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    padding: 15PX;
+    width: 100%;
+}
+
+#fifth h2 {
+    display: block;
+    font-size: 25px;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bolder;
+}
+
+.fif{
+    width: 25%;
+    text-align: center;
+    padding: 20px;
+    font-weight: 700;
+}
+
+.fif1{
+    width: 25%;
+    text-align: center;
+    padding: 20px;
+    font-weight: 700;
+}
+
+
+#fifth .process-icon{
+
+
+    border-radius: 50%;
+    background: #333;
+    color: #fff;
+    padding: 1.7rem;
+    width: 110px;
+    height: 110px;
+    line-height: 50px;
+    text-align: center;
+    position: relative;
+    transition: all 1s;
+}
+
+#fifth .process-icon:hover {
+    background: #ffbc00;
+    width: 130px;
+    height: 130px;
+    line-height: 90px;
+}
+
+#fifth .process-step {
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 20px;
+    background:green;
+    color: black;
+    border-radius: 50%;
+    height: 10px;
+    width: 1px;
+    line-height: 0px;
+    padding: 1rem;
+    transition: all 1s;
+}
+
+/* ============================<SECTION-FIFTH-END>================================= */
+
+/* ============================<FOOTER-END>================================= */
+
+#footer{
+    justify-content: center;
+    text-align: center;
+    display: flex;
+    background-color: black;
+    color: white;
+    padding: 20px;
+}
+
+#compony{
+    text-align: center;
+    justify-content: center;
+    width: 33%;
+    font-weight: 200;
+    font-size: 15px;
+}
+
+#compony h2{
+    font-weight: bolder;
+    font-size: 30px;
+}
+
+#navigate{
+    text-align: center;
+    justify-content: center;
+    width: 33%;
+    font-weight: 200;
+    font-size: 25px;
+    
+    
+}
+#navigate h2{
+    font-weight: bolder;
+    font-size: 30px;
+}
+
+#navigate ul li{
+    display: inline block;
+    padding: 5px
+}
+
+#navigate ul li a{
+    color: white;
+    font-size: 17px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-transform: uppercase;
+}
+
+
+/* #navigate  li:hover {
+    background: #ffbc00;
+    /* width: 60px;
+    height: 60px;
+    line-height: 50px; */
+    /* display: ; */
+*/
+
+
+
+#followme{
+    text-align: center;
+    justify-content: center;
+    width: 33%;
+    font-weight: 200;
+    font-size: 20px;
+}
+
+#followme h2{
+    font-weight: bolder;
+    font-size: 30px;
+}
+
+#followme ul li {
+    display: inline ;
+}
+
+#followme .process-icon{
+
+
+    border-radius: 50%;
+    background: #333;
+    color: #fff;
+    padding: 0.5rem;
+    width: 50px;
+    height: 70px;
+    line-height: 50px;
+    text-align: center;
+    position: relative;
+    transition: all 1s;
+}
+
+#followme .process-icon:hover {
+    background: #ffbc00;
+    width: 60px;
+    height: 60px;
+    line-height: 50px;
+}
+
+#followme p:hover{
+background-color: yellow;
+
+}
+
+#followme p{
+    color: red;
+    font-size:20px;
+    font-weight: bolder;
+    
+}
+
+footer #para{
+    text-align: center;
+    justify-content: center;
+    font-weight: bolder;
+    font-size: 20px;
+}
+
+
+
+/* ============================<FOOTER-END>================================= */
